@@ -1,13 +1,18 @@
 
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Dashboard.css";
 
 const Dashboard = () => {
   return (
-    <div className="dashboard-container">
-      <h2>Welcome to your Dashboard</h2>
-      <p>You can now create and manage your resume.</p>
-      <Link to="/resume">Create Resume</Link>
+    <div className="dashboard">
+      <h1>Welcome to the Dashboard</h1>
+      <p>Select a resume template to get started!</p>
+      {/* Add Resume Templates */}
+      <div className="templates">
+        <div className="template">Template 1</div>
+        <div className="template">Template 2</div>
+        <div className="template">Template 3</div>
+      </div>
     </div>
   );
 };
